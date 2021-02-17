@@ -1,7 +1,7 @@
 import './App.scss'; 
-import Home from './components/home/home';
-import Login from './components/login/login';
-import Register from './components/register/register';
+import Home from './components/pages/home/home';
+import Login from './components/pages/login/login';
+import Register from './components/pages/register/register';
 
 
 function App() {
