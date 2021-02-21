@@ -1,4 +1,5 @@
 @import  "../../../scss/settings/fonts";
+
 .header {
     box-sizing: border-box;
     display: flex;
@@ -72,14 +73,20 @@
                 text-decoration: none;
                 border: 2px solid black;
                 font-size: 20px;
-                padding: 20px 30px 20px;
+                padding: 10px 20px 10px;
                 text-decoration: none;
                 color: red;
             }
+           
 
             &.link-zaloguj{
                 border: 2px solid orange;
                 color: red;
+                
+                &:link{
+                    background-color: green;
+    
+                }
 
             }
         }

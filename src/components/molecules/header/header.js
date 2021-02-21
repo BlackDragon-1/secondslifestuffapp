@@ -5,6 +5,7 @@ import "./header.scss";
 import AccountLoginRegoster from '../../atoms/accountLoginRegoster/accountLoginRegoster';
 import PatternBlock from '../patternBlock/patternBlock';
 import InfoBlock from '../../atoms/infoBlock/infoBlock';
+import NavigationMenu from '../../atoms/navigationMenu/navigationMenu';
 
 const Header = () => {
     return (
@@ -14,13 +15,7 @@ const Header = () => {
             <div className="header-right_box">
                <nav className="upmenu" >
                     <AccountLoginRegoster/>  
-                    <ul className='menu'>
-                        <li>Start</li>
-                        <li>O co chodzi</li>
-                        <li>O nas</li>
-                        <li>Fundacja i Organizacje </li>
-                        <li>Kontakt </li>
-                    </ul>  
+                    <NavigationMenu/>
                 </nav> 
 
                 <div className="downmenu">
