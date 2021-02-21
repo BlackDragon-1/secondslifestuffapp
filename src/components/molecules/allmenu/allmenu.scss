@@ -1,0 +1,56 @@
+@import  "../../../scss/settings/fonts";
+.upmenu {
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    
+
+    ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+    margin:20px;
+
+    &.menu{
+        color: var(--color-lightgrey);
+        font-size: 15px;
+
+        li {
+            padding: 15px 20px 15px;
+            text-decoration: none;
+            
+        }
+        li:first-child{
+            border: 1px solid orange;
+        }
+        
+    }
+    &.account{
+        color: var(--color-lightgrey);
+        font-size: 20px;
+
+        li{
+            text-decoration: none;
+            border: 2px solid black;
+            font-size: 20px;
+            padding: 10px 20px 10px;
+            text-decoration: none;
+            color: red;
+        }
+       
+        &.link-zaloguj{
+            border: 2px solid orange;
+            color: red;
+
+        }
+    }
+
+       
+    }
+}

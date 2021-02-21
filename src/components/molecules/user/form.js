@@ -62,7 +62,7 @@ class LoginForm extends Component {
         })
     }
 
-    handleCurrentUser = () => {
+    handleLoggedUser = () => {
         let whichUser = firebase.auth().currentUser;
         if(whichUser){
             whichUser.getIdTokenResult().then( res => {
@@ -77,8 +77,6 @@ class LoginForm extends Component {
     render(){
         return (
         <>
-            komponent klasowy LoginForm form.js
-
             <form onSubmit={(e) => this.handleform(e) }>
 
                 <div className="form-email">
@@ -105,24 +103,19 @@ class LoginForm extends Component {
                         </input>
                 </div>
 
-                <button type="submit" className="btn"> 
-                    {this.state.register ? "zaloguj" : "załóż konto"}
-                </button>
+                <button type="submit" className="btn">
+                    zaloguj </button>
 
             </form>
 
             <button onClick={ ()=> this.handleLogout() }>
-                Logout
+                wyloguj
             </button>
 
-            <button onClick={ ()=>this.handleCurrentUser() }>
-                Ask about the user
+            <button onClick={ ()=>this.handleLoggedUser() }>
+               current user
             </button>
            
-
-
-
-
         </>
     );
     }

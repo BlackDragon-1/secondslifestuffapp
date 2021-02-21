@@ -1,18 +1,34 @@
 import React from 'react';
+import LoginForm from '../../molecules/user/login';
+import Allmenu from '../../molecules/allmenu/allmenu';
 import "../../../scss/main.scss";
-import LoginForm from '../../molecules/user/form';
+import Pattern from '../../atoms/pattern/pattern';
+import './zaloguj.scss';
+
 
 const Zaloguj = () => {
-     const style={
-         width: '200px',
-         height: '400px',
-         backgroundColor:'green'
-
-     }
+     
     return (
-        <div style={style}>
-           Jesteś zalogowany
-           <LoginForm/>
+        <div>
+            <Allmenu/>
+            <div className="login">
+
+                <div className="login-pattern">
+                    <Pattern props='Zaloguj się'/>
+                </div>
+
+                <div className="login-form">
+                    <LoginForm/>
+                </div>
+
+            </div>
+
+            <div className="choice">
+
+               
+            </div>
+
+           
         </div>
     );
 };

@@ -1,0 +1,33 @@
+.form-grey{
+    width: 300px;
+    height: 200px;
+    background-color: lightgrey;
+    padding: 50px;
+    margin: auto;
+    margin-top: 50px;
+
+    .form-grey-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        .form-email, .form-password{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .form{
+                background-color: lightgrey;
+                outline: 0;
+                border-width: 0 0 2px;
+                border-color: darkgrey;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+}

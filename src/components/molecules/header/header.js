@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
- 
-import "./header.scss";
-import AccountLoginRegoster from '../../atoms/accountLoginRegoster/accountLoginRegoster';
+
 import PatternBlock from '../patternBlock/patternBlock';
 import InfoBlock from '../../atoms/infoBlock/infoBlock';
-import NavigationMenu from '../../atoms/navigationMenu/navigationMenu';
+
+import Allmenu from '../allmenu/allmenu';
+import "./header.scss";
 
 const Header = () => {
     return (
@@ -13,10 +13,7 @@ const Header = () => {
             <div className="header-left_box">
              </div>
             <div className="header-right_box">
-               <nav className="upmenu" >
-                    <AccountLoginRegoster/>  
-                    <NavigationMenu/>
-                </nav> 
+               <Allmenu/>
 
                 <div className="downmenu">
                     <PatternBlock/>
