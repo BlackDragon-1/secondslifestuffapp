@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    //width: 100%;
     height: 100vh;
     width:100vw;
     font-family: $font-base;
@@ -39,7 +38,7 @@
         justify-content: flex-end;
         align-items: flex-start;
         flex-wrap: wrap;
-        margin-left: 10rem;
+        margin-left: 5rem;
         
 
         ul {
@@ -53,10 +52,10 @@
 
         &.menu{
             color: var(--color-lightgrey);
-            font-size: 25px;
+            font-size: 15px;
 
             li {
-                padding: 25px 40px 25px;
+                padding: 15px 20px 15px;
                 text-decoration: none;
                 
             }
@@ -103,26 +102,26 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        font-size: 70px;
+        font-size: 40px;
         color: var(--color-darkgrey);
 
         h1{
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
         
 
         .pattern-small{
             
-            width: 25rem;
-            height: 100px;
+            width: 15rem;
+            height: 60px;
         }
     }
 
     .boxes{
         display: flex;
         justify-content: space-between;
-        width: 80rem;
-        margin-top: 120px;
+        width: 45rem;
+        margin-top: 10px;
          
 
         .boxes-info{
@@ -131,12 +130,12 @@
             align-items: center;
             text-align: center;
             
-            width:25rem;
-            font-size: 3.5rem;
+            width:12rem;
+            font-size: 2rem;
             font-weight: 200;
             color: var(--color-darkgrey);
             border: 1px solid var(--color-lightgrey);
-            padding: 70px 80px 70px;
+            padding: 35px 50px 35px;
         }
     }
 
