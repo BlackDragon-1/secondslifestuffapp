@@ -5,49 +5,95 @@
     align-items: center;
     flex-direction: row;
     //width: 100%;
-    //height: 100vh;
+    height: 100vh;
+    width:100vw;
 
 
-    .header-left_box, .header-right_box {
+    .header-left_box  {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 100%;
+
+        background-image: url(../../../assets/images/HeroImage.png);
+        background-position: right center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         border: 1px solid deeppink;
     }
 
-    .header-left_box {
-        background-image: url(../../../assets/images/HeroImage.png);
-        // min-width: 100%;
-        // min-height: 100%;
-        background-position: center;
-      }
+    .header-right_box {
+       
+        width: 100%;
+        height: 100%;
 
-    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        border: 1px solid deeppink;
+    }
+
+    .upmenu {
         align-self: flex-start;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
         flex-wrap: wrap;
-        border: 1px solid deeppink;
-    }
 
-    ul {
+        border: 1px solid deeppink;
+        margin-left: 10rem;
+
+        ul {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         flex-direction: row;
+
         width: 100%;
         margin-bottom: 20px;
+        // border: 1px solid deeppink;
+
+            li {
+                padding-left: 10px;
+                
+            }
+            li:first-child{
+                border: 1px solid deeppink;
+            }
+         }
+    }
+}
+
+.downmenu{
+    border: 1px solid deeppink;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+    .pattern{
+        border: 1px solid deeppink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .boxes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: 1px solid deeppink;
 
-        li {
-            padding-left: 10px;
-            
+        .boxes-left, .boxes-right{
+            border: 1px solid deeppink;
         }
     }
+
 }
 
 @media (max-width: 1024px) {       
