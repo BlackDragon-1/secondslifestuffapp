@@ -4,18 +4,26 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
-    height: 100vh;
+    //width: 100%;
+    //height: 100vh;
+
 
     .header-left_box, .header-right_box {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50vw;
+        width: 100%;
         height: 100vh;
 
         border: 1px solid deeppink;
     }
+
+    .header-left_box {
+        background-image: url(../../../assets/images/HeroImage.png);
+        // min-width: 100%;
+        // min-height: 100%;
+        background-position: center;
+      }
 
     nav {
         align-self: flex-start;
@@ -23,6 +31,7 @@
         justify-content: flex-end;
         align-items: flex-start;
         flex-wrap: wrap;
+        border: 1px solid deeppink;
     }
 
     ul {
@@ -31,11 +40,12 @@
         align-items: center;
         flex-direction: row;
         width: 100%;
-        list-style: none;
         margin-bottom: 20px;
+        border: 1px solid deeppink;
 
         li {
             padding-left: 10px;
+            
         }
     }
 }

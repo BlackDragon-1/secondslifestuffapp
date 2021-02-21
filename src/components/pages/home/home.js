@@ -7,8 +7,20 @@ import "../../../scss/main.scss";
 const Home = () => {
     return (
         <>
-            <Header />
-            <Threecolumns/>
+        <div className='container home-container'>
+             
+
+                <Header/>
+                <Threecolumns/>
+                <p>wystarczą 4 proste kroki</p>
+                <p>O nas</p>
+                <p>Komu pomagamy ?</p>
+                <p>Skontaktuj sie z nami</p>
+                <p>footer</p>
+
+            
+        </div>
+           
         </>
     );
 };
