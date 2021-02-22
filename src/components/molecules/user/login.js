@@ -92,16 +92,30 @@ class LoginForm extends Component {
                         </input>
                 </div>
 
-                <button type="submit" className="btn">
-                    zaloguj 
-                </button>
+                <button type="submit" className="btn box-button-zaloguj">
+                        zaloguj 
+                    </button> 
+
+                <div className='box-button'>
+                    <button type="submit" className="btn box-button-zaloz">
+                        załóż konto
+                    </button>
+                    <button type="submit" className="btn box-button-zaloguj">
+                        zaloguj 
+                    </button>   
+                </div>
+                
 
             </form>
  
-            <button onClick={ ()=>this.handleLoggedUser() }>
-               zalogowany user
-            </button>
+            
+
         </div>
+
+            <button className='handleLoggedUser' onClick={ ()=>this.handleLoggedUser() }>
+               zalogowany user pojawi się w console.log
+            </button>
+
         </>
     );
     }

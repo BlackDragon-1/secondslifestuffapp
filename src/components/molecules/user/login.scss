@@ -1,6 +1,8 @@
+@import '/src/scss/settings/fonts';
 .form-grey{
+    font-family: $font-base;
     width: 300px;
-    height: 200px;
+    height: 120px;
     background-color: lightgrey;
     padding: 50px;
     margin: auto;
@@ -25,9 +27,34 @@
                 border-width: 0 0 2px;
                 border-color: darkgrey;
                 margin-bottom: 30px;
+
+                
             }
+        }
+        .box-button{
+            
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+
+            .box-button-zaloguj{
+                border: 1 px solid grey;
+           }
+
+            .btn{
+                height: 50px;
+                
+                background-color: transparent;
+            }
+
+            
         }
     }
 
 
+}
+.handleLoggedUser{
+    margin-left: 50%;
+    margin-top: 150px;
 }
